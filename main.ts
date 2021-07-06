@@ -14,10 +14,10 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     SummeLuftdruck = 0
-    for (let Index = 0; Index <= AnzahlMessungen - 1; Index++) {
+    for (let Index = 0; Index <= LuftdruckListe.length - 1; Index++) {
         SummeLuftdruck += LuftdruckListe[Index]
     }
-    basic.showNumber(SummeLuftdruck / AnzahlMessungen)
+    basic.showNumber(SummeLuftdruck / LuftdruckListe.length)
 })
 let SummeLuftdruck = 0
 let Luftdruck = 0
